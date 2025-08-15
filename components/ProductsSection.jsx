@@ -58,7 +58,7 @@ export default function ProductsSection({ products }) {
             {/* Header  >>*/}
             <div className="flex justify-between items-center mb-4 border-y border-gray-300 py-4 px-2 ">
                 <div className="flex items-center  space-x-2 hidden md:block">
-                    <span className="text-sm font-medium">{products.length} ITEMS</span>
+                    <span className="text-sm font-medium">{products?.length} ITEMS</span>
                     <button
                         onClick={() => setShowFilter(!showFilter)}
                         className="text-sm text-gray-500 underline ml-20  hover:cursor-pointer "
