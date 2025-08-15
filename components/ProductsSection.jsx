@@ -168,7 +168,7 @@ export default function ProductsSection({ products }) {
 
                 {/* Products List >> */}
                 <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {products.map((product) => (
+                    {products?.map((product) => (
                         <div key={product.id} className="relative group hover:scale-105  transition duration-300 cursor-pointer">
                             {product.tag && (
                                 <span className="absolute top-2 left-2 bg-white text-xs font-semibold px-2 py-1 border">
