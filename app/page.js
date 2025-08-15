@@ -6,7 +6,6 @@ export default async function Home() {
   const res = await fetch('https://shopclues-backend.vercel.app/api/products', { cache: "no-store" })
   const { products } = await res.json()
 
-  // console.log(products.slice(0,2))
 
   return (
     <>

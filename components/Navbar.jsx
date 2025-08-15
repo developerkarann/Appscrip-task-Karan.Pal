@@ -77,7 +77,7 @@ export default function Navbar() {
       {/* Mobile Slide-In Menu */}
       <div
         className={`fixed inset-0 bg-black/50 z-50 transform ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
+          menuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="bg-white w-64 h-full p-6 flex flex-col">
