@@ -44,14 +44,6 @@ export default function ProductsSection({ products }) {
         },
     ];
 
-    // const products = [
-    //     { id: 1, name: "PPXOC MILKYWAY ", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    //     { id: 2, name: "PPXOC MILKYWAY ", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    //     { id: 3, name: "PRODUCT NAME", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    //     { id: 4, name: "PRODUCT NAME", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    //     { id: 5, name: "PRODUCT NAME", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    //     { id: 6, name: "PRODUCT NAME", image: [new URL("https://storage.googleapis.com/fir-auth-1c3bc.appspot.com/1692255251854-xbox.jpg")] },
-    // ];
 
     const sortOptions = [
         "RECOMMENDED",
@@ -193,7 +185,7 @@ export default function ProductsSection({ products }) {
                             <div className="mt-2 text-sm font-medium">{product.name}</div>
                             <div className="flex gap-2">
                                 <div className="text-xs text-gray-500">
-                                    {product.title.slice(0,30)}...
+                                    {product?.title?.slice(0,30)}...
                                 </div>
                                 <button className=" ">
                                     <Heart className="w-5 h-5 text-gray-500 cursor-pointer" />

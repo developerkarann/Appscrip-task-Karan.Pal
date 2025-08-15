@@ -11,7 +11,7 @@ export default async function  Home() {
   return (
     <>
       <MidSections content={'DISCOVER OUR PRODUCTS'} />
-      <ProductsSection products={products.slice(0,20)}/>
+      <ProductsSection products={products?.slice(0,20)}/>
     </>
   );
 }
